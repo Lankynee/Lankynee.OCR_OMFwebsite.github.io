@@ -13,30 +13,43 @@
 <body>
 
     <header class="header">
-        <h1 class="header__logo">ohmyfood</h1>
+        <a href="index.html">
+            <h1 class="header__logo">ohmyfood</h1>
+        </a>
     </header>
 
+    <div class="test"> <!--TEST SASS-->
+        Test
+    </div>
 
     <section class="carte">
         <article class="menu1">
-           <div class="menu1__img"><img src="" alt="note de musique"></div>
-           <h3 class="menu1__heading">La note enchantée</h3>
-           <p class="menu1__body">Menu</p>
+            <a href="menu1.html">
+                <div class="menu1__img"><img src="img/note_petit.jpg" alt="note de musique"></div>
+                <h3 class="menu1__heading">La note enchantée</h3>
+                <p class="menu1__body">Menu</p>
+            </a>
         </article>
 
         <article class="menu2">
-            <h3 class="menu2__heading">Le chic à la française</h3>
-           <p class="menu2__body">Menu</p>
+            <a href="menu2.html">
+                <h3 class="menu2__heading">Le chic à la française</h3>
+                <p class="menu2__body">Menu</p>
+            </a>
         </article>
 
         <article class="menu3">
-            <h3 class="menu3__heading">Le délice des papilles</h3>
-           <p class="menu3__body">Menu</p>
+            <a href="menu3.html">
+                <h3 class="menu3__heading">Le délice des papilles</h3>
+                <p class="menu3__body">Menu</p>
+            </a>
         </article>
 
         <article class="menu4">
-           <h3 class="menu4__heading">La palette du goût</h3>
-           <p class="menu4__body">Menu</p>
+            <a href="menu4.html">
+                <h3 class="menu4__heading">La palette du goût</h3>
+                <p class="menu4__body">Menu</p>
+            </a>
         </article>
     </section>
 
@@ -47,8 +60,12 @@
 
 
     <footer class="footer">
-        <h2 class="footer__mentions">Mentions légales</h2>
-        <h2 class="footer__contact">Contactez-nous</h2>
+        <div class="footer__mentions">
+            <h2><a href="mentions.html" target="_blank">Mentions légales</a></h2>
+        </div>
+        <div class="footer__contact">
+            <h2><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></h2>
+        </div>
     </footer>
 
 </body>

@@ -1,0 +1,29 @@
+.test {
+  color: red;
+}
+@media (min-width: 576px) {
+  .test {
+    color: blue;
+  }
+}
+@media (min-width: 768px) {
+  .test {
+    color: green;
+  }
+}
+@media (min-width: 992px) {
+  .test {
+    color: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .test {
+    color: purple;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

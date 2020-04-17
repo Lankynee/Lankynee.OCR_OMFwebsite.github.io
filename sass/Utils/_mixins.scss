@@ -1,0 +1,33 @@
+@mixin media-breakpoint-up ($size) {
+    @media (min-width: map_get($breakpoints,$size)) {
+        @content;
+    }
+}
+
+$breakpoints: (
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+);
+
+
+.test {
+    color: red;
+
+    @include media-breakpoint-up (sm) {
+        color: blue;
+    }
+
+    @include media-breakpoint-up (md) {
+        color: green;
+    }
+
+    @include media-breakpoint-up (lg) {
+        color: yellow;
+    }
+
+    @include media-breakpoint-up (xl) {
+        color: purple;
+    }
+}
