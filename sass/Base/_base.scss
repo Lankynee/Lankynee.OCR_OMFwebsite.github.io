@@ -1,2 +1,15 @@
-body {margin:0}
-body {display:flex;background-color: black} //TEST
+.test {
+    color: red;
+    @include media-breakpoint-up (sm) {
+        color: blue;
+    }
+    @include media-breakpoint-up (md) {
+        color: green;
+    }
+    @include media-breakpoint-up (lg) {
+        color: yellow;
+    }
+    @include media-breakpoint-up (xl) {
+        color: purple;
+    }
+}

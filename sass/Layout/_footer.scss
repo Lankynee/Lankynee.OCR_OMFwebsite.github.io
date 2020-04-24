@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $color-primary;
+    a{
+        color: $color-secondary;
+        font-family: 'Arial';
+        font-size: 0.75em;
+    }
+}

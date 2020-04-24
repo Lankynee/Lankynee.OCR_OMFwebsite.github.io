@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
 .test {
   color: red;
 }
@@ -22,8 +33,288 @@
   }
 }
 
-body {
-  margin: 0;
+@font-face {
+  font-family: "Devonshire";
+  src: url("fonts/Devonshire-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CroissantOne";
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DancingScript";
+  src: url("fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaushanScript";
+  src: url("fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Ebrima";
+  font-weight: 900;
+  background-color: #579c87;
+  color: #fdcb46;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #579c87;
+}
+.footer a {
+  color: #fdcb46;
+  font-family: "Arial";
+  font-size: 0.75em;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .carte {
+    margin: 20px auto 0 auto;
+    width: 460px;
+    flex-flow: row wrap;
+    flex: 1 1 300px;
+  }
+}
+
+.menu1, .menu2, .menu3, .menu4 {
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #a5a5a5;
+  height: 300px;
+  width: 200px;
+  margin: 15px;
+  overflow: hidden;
+}
+.menu1 a, .menu2 a, .menu3 a, .menu4 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.menu1 a:hover, .menu2 a:hover, .menu3 a:hover, .menu4 a:hover {
+  transform: scale(1.2);
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  opacity: 0.5;
+}
+.menu1 a h3, .menu2 a h3, .menu3 a h3, .menu4 a h3 {
+  margin-bottom: 20px;
+}
+
+.menu1 {
+  background-color: #fcdfdb;
+}
+.menu1 a {
+  color: #3d1319;
+}
+.menu1 h3 {
+  font-family: "Devonshire";
+  font-weight: normal;
+}
+.menu1 p {
+  font-family: "Segoe Print";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.menu2 {
+  background-color: #fff5fe;
+}
+.menu2 h3 {
+  font-family: "CroissantOne";
+  font-weight: normal;
+  font-size: 0.75em;
+  background: -webkit-linear-gradient(top left, #e3b013, #8d6fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu2 p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c67412;
+}
+
+.menu3 {
+  background-color: #f9f9f9;
+}
+.menu3 h3 {
+  font-family: "DancingScript";
+  font-weight: normal;
+  background: -webkit-linear-gradient(top left, #0022db, #1a91fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu3 p {
+  font-family: "Segoe Print";
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #1a91fb;
+}
+
+.menu4 {
+  background-color: #fdfffd;
+}
+.menu4 h3 {
+  font-family: "KaushanScript";
+  font-weight: normal;
+  background: -webkit-linear-gradient(top left, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu4 p {
+  font-family: "Segoe Print";
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #66b550;
+}
+
+.prochnmt {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  font-family: "Arial";
+  font-weight: normal;
+  margin: 20px auto 70px auto;
+  padding: 10px 30px 10px 30px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.menusheading {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.mainmenu1, .mainmenu2, .mainmenu3, .mainmenu4 {
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #a5a5a5;
+  width: 75%;
+  margin: 20px auto 100px auto;
+  padding: 75px 0 100px 0;
+}
+.mainmenu1__header, .mainmenu2__header, .mainmenu3__header, .mainmenu4__header {
+  text-align: center;
+  font-size: 2em;
+}
+.mainmenu1 h3, .mainmenu2 h3, .mainmenu3 h3, .mainmenu4 h3 {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+.mainmenu1 h3 img, .mainmenu2 h3 img, .mainmenu3 h3 img, .mainmenu4 h3 img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mainmenu1 h3 img, .mainmenu2 h3 img, .mainmenu3 h3 img, .mainmenu4 h3 img {
+    display: inline;
+    vertical-align: middle;
+    height: 25px;
+    width: 40%;
+    max-width: 200px;
+  }
+}
+.mainmenu1 table, .mainmenu2 table, .mainmenu3 table, .mainmenu4 table {
+  margin: auto;
+}
+.mainmenu1 td, .mainmenu2 td, .mainmenu3 td, .mainmenu4 td {
+  padding: 10px;
+}
+.mainmenu1 .prix, .mainmenu2 .prix, .mainmenu3 .prix, .mainmenu4 .prix {
+  text-align: right;
+}
+
+.mainmenu1 {
+  background-color: #fcdfdb;
+  color: #3d1319;
+  font-family: "Segoe Print";
+}
+.mainmenu1 h2 {
+  font-family: "Devonshire";
+  font-weight: normal;
+}
+.mainmenu1__footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Devonshire";
+  font-size: 2em;
+  padding-top: 50px;
+}
+
+.mainmenu2 {
+  background-color: #fff5fe;
+}
+.mainmenu2 h2 {
+  font-family: "CroissantOne";
+  font-weight: normal;
+  background: -webkit-linear-gradient(top left, #e3b013, #8d6fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainmenu2 .entree {
+  color: #c67412;
+}
+.mainmenu2 .plat {
+  color: #a56799;
+}
+.mainmenu2 .dessert {
+  color: #6e4ccc;
+}
+
+.mainmenu3 {
+  background-color: #f9f9f9;
+  font-family: "Segoe Print";
+}
+.mainmenu3 h2 {
+  font-family: "DancingScript";
+  font-size: 3.5em;
+  font-weight: normal;
+  background: -webkit-linear-gradient(top left, #0022db, #1a91fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainmenu3 h3 {
+  font-weight: normal;
+}
+
+.mainmenu4 {
+  background-color: #fdfffd;
+  font-family: "Segoe Print";
+}
+.mainmenu4 h2 {
+  font-family: "KaushanScript";
+  font-size: 3.5em;
+  font-weight: normal;
+  background: -webkit-linear-gradient(top left, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainmenu4 h3 {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,33 +1,54 @@
 @mixin media-breakpoint-up ($size) {
-    @media (min-width: map_get($breakpoints,$size)) {
+    @media (min-width: map_get($breakpoints, $size)) {
         @content;
     }
 }
 
-$breakpoints: (
-    sm:576px,
-    md:768px,
-    lg:992px,
-    xl:1200px
-);
+@mixin main-text {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
 
+@mixin menu-box {
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #a5a5a5;
+}
 
-.test {
-    color: red;
-
-    @include media-breakpoint-up (sm) {
-        color: blue;
+@mixin menu-layout {
+    @include menu-box;
+    width: 75%;
+    margin: 20px auto 100px auto;
+    padding: 75px 0 100px 0;
+    &__header{
+        text-align: center;
+        font-size: 2em;
     }
-
-    @include media-breakpoint-up (md) {
-        color: green;
+    h3{
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+        img {
+            display: none;
+                @include media-breakpoint-up (md) {
+                    display: inline;
+                    vertical-align: middle;
+                    height: 25px;
+                    width: 40%;
+                    max-width: 200px;
+                }
+            }
     }
-
-    @include media-breakpoint-up (lg) {
-        color: yellow;
+    table {
+        margin: auto;
     }
-
-    @include media-breakpoint-up (xl) {
-        color: purple;
+    td{
+        padding: 10px;
     }
+}
+
+@mixin menu-zoom {
+    transform: scale(1.2);
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    opacity: 0.5;
 }

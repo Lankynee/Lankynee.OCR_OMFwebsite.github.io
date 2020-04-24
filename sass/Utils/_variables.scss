@@ -1,3 +1,15 @@
 $color-primary: #579c87;
-$color-secondary: #579c87;
+$color-secondary: #fdcb46;
 $bg-color: #fcdfdb #fff5fe #f9f9f9 #fdfffd;
+$ttl-font: 'Devonshire' 'CroissantOne' 'DancingScript' 'KaushanScript';
+$fontsize: (
+    s:1em,
+    m:1.5em,
+    l:3em,
+    xl:10em);
+$breakpoints: (
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px
+);
