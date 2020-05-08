@@ -3,13 +3,21 @@
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px 10px 15px;
+    padding: 15px;
     width: 100%;
     box-sizing: border-box;
     background-color: $color-primary;
-    a{
+    a {
+        display: block;
         color: $color-secondary;
         font-family: 'Arial';
-        font-size: 0.75em;
+        font-size: 1.2em;
+        @include media-breakpoint-up (s) {
+            font-size: 1.4em;
+        }
+        &:hover{
+            animation: wiggle 1s ease-in-out infinite;
+        }
     }
+
 }

@@ -5,9 +5,31 @@
 
 .mainmenu {
     &1,&2,&3,&4 {
+        @include media-breakpoint-up (m) {
+        table {
+            width: 600px
+        }
+    }
         @include menu-layout;
+        .menutitle {
+            position: relative;
+            &::after{
+                content: '';
+                background: #000;
+                display: block;
+                position: absolute;
+                width: 0; height: 3px;
+                right: 0;
+                transition: width 400ms ease;
+            }
+            &:hover::after{  width: 100%;
+                left: 0;
+                background: #000;
+            }
+        }
         .prix {
             text-align: right;
+            font-weight: bold;
         }
     }
 }
@@ -16,6 +38,10 @@
     background-color: nth($bg-color,1);
     color: #3d1319;
     font-family: 'Segoe Print';
+    .titleflex{
+        display: flex;
+        justify-content: space-between;
+    }
     h2 {
         font-family: nth($ttl-font,1);
         font-weight: normal;
@@ -27,6 +53,7 @@
         align-items: center;
         font-family: nth($ttl-font,1);
         font-size: 2em;
+        font-weight: normal;
         padding-top: 50px;
     }
 }
@@ -36,7 +63,7 @@
     h2 {
         font-family: nth($ttl-font,2);
         font-weight: normal;
-        background: -webkit-linear-gradient(top left,#e3b013,#8d6fff);
+        background: -webkit-linear-gradient(top left,#e38913 25%,#8f5bfe 75%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

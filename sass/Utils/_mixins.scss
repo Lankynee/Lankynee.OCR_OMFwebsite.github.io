@@ -11,12 +11,13 @@
 
 @mixin menu-box {
     box-sizing: border-box;
-    box-shadow: 0 0 5px #a5a5a5;
+    box-shadow: 0 0 10px #ccc;
 }
 
 @mixin menu-layout {
     @include menu-box;
     width: 75%;
+    max-width: 900px;
     margin: 20px auto 100px auto;
     padding: 75px 0 100px 0;
     &__header{
@@ -27,14 +28,24 @@
         margin-top: 50px;
         text-align: center;
         padding: 20px;
+        .ttl-leftdeco{}
+        .ttl-rightdeco{}
         img {
+            flex:1;
             display: none;
-                @include media-breakpoint-up (md) {
+                @include media-breakpoint-up (s) {
                     display: inline;
                     vertical-align: middle;
-                    height: 25px;
-                    width: 40%;
-                    max-width: 200px;
+                    height: 100%;
+            //      width: 20%;
+            //      max-width: 200px;
+                }
+                @include media-breakpoint-up (m) {
+                    display: inline;
+                    vertical-align: middle;
+                    height: 100%;
+             //     width: 40%;
+             //     max-width: 200px;
                 }
             }
     }
@@ -47,8 +58,6 @@
 }
 
 @mixin menu-zoom {
-    transform: scale(1.2);
-    transition-property: transform, opacity;
-    transition-duration: 500ms;
+    transform: scale(1.35);
     opacity: 0.5;
 }
