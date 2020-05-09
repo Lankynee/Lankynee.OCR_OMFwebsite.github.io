@@ -11,24 +11,26 @@
 </head>
 
 <body>
-
+<!--HEADER: En-tête avec logo de la marque-->
     <header class="header">
         <a href="index.html">
             <h1 class="header__logo">ohmyfood</h1>
         </a>
     </header>
 
-    <h2 class="menusheading">Le délice des papilles</h2>
+    <!--Nom du menu au dessus de la carte-->
+    <h2 class="menu-name">Le délice des papilles</h2>
 
-    <main class="mainmenu3">
+    <main class="content-menu3">
+        <!--En-tête avec logo du menu-->
+        <h2 class="content-menu3__header">Le délice des papilles</h2>
 
-        <h2 class="mainmenu3__header">Le délice des papilles</h2>
-
-        <section class="entree">
-            <h3><img src="img/heading3_deco_left1.png" alt="">
-                <span class="menutitle">Pour bien commencer</span>
+        <section class="category entree">
+            <div class="category__title">
+                <img src="img/heading3_deco_left1.png" alt="">
+                <h3>Pour bien commencer</h3>
                 <img src="img/heading3_deco_right1.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Tartare de thon assaisonné au yuzu</td>
@@ -45,11 +47,12 @@
             </table>
         </section>
 
-        <section class="plat">
-            <h3><img src="img/heading3_deco_left2.png" alt="">
-                <span class="menutitle">Pour bien continuer</span>
+        <section class="category plat">
+            <div class="category__title">
+                <img src="img/heading3_deco_left2.png" alt="">
+                <h3>Pour bien continuer</h3>
                 <img src="img/heading3_deco_right2.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Poulet rôti aux herbes de provence et sa crème de truffe</td>
@@ -66,11 +69,12 @@
             </table>
         </section>
 
-        <section class="dessert">
-            <h3><img src="img/heading3_deco_left3.png" alt="">
-                <span class="menutitle">Pour bien terminer</span>
+        <section class="category dessert">
+            <div class="category__title">
+                <img src="img/heading3_deco_left3.png" alt="">
+                <h3>Pour bien terminer</h3>
                 <img src="img/heading3_deco_right3.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Farandole de desserts du chef</td>
@@ -89,9 +93,10 @@
 
     </main>
 
+<!--FOOTER: boutons "Mentions Légales" + "Contact"-->
     <footer class="footer">
         <div class="footer__mentions">
-            <p><a href="mentions.html" target="_blank">Mentions légales</a></p>
+            <p><a href="#" target="_blank">Mentions légales</a></p>
         </div>
         <div class="footer__contact">
             <p><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></p>

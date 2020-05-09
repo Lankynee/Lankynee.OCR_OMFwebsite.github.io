@@ -11,24 +11,26 @@
 </head>
 
 <body>
-
+<!--HEADER: En-tête avec logo de la marque-->
     <header class="header">
         <a href="index.html">
             <h1 class="header__logo">ohmyfood</h1>
         </a>
     </header>
 
-    <h2 class="menusheading">Le chic à la française</h2>
+    <!--Nom du menu au dessus de la carte-->
+    <h2 class="menu-name">Le chic à la française</h2>
 
-    <main class="mainmenu2">
+    <main class="content-menu2">
+        <!--En-tête avec logo du menu-->
+        <h2 class="content-menu2__header">Le chic à la française</h2>
 
-        <h2 class="mainmenu2__header">Le chic à la française</h2>
-
-        <section class="entree">
-            <h3><img src="img/heading2_deco_left1.png" alt="">
-                <span class="menutitle">Pour se mettre en appétit</span>
+        <section class="category entree">
+            <div class="category__title">
+                <img src="img/heading2_deco_left1.png" alt="">
+                <h3>Pour se mettre en appétit</h3>
                 <img src="img/heading2_deco_right1.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Tartare de poulpe acidulé aux zests d'orange</td>
@@ -45,11 +47,12 @@
             </table>
         </section>
 
-        <section class="plat">
-            <h3><img src="img/heading2_deco_left2.png" alt="">
-                <span class="menutitle">Plaisir des papilles</span>
+        <section class="category plat">
+            <div class="category__title">
+                <img src="img/heading2_deco_left2.png" alt="">
+                <h3>Plaisir des papilles</h3>
                 <img src="img/heading2_deco_right2.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Coquilles Saint-Jacques accompagnées d'une purée de panais</td>
@@ -66,29 +69,34 @@
             </table>
         </section>
 
-        <section class="dessert">
-            <h3><img src="img/heading2_deco_left3.png" alt="">
-                <span class="menutitle">Gourmandises sucrées</span>
+        <section class="category dessert">
+            <div class="category__title">
+                <img src="img/heading2_deco_left3.png" alt="">
+                <h3>Gourmandises sucrées</h3>
                 <img src="img/heading2_deco_right3.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Pétales de violettes glacés et purée de noisettes</td>
+                    <td class="prix"></td>
                 </tr>
                 <tr>
                     <td>Fondant au chocolat revisité</td>
+                    <td class="prix"></td>
                 </tr>
                 <tr>
                     <td>Millefeuille croustillant</td>
+                    <td class="prix"></td>
                 </tr>
             </table>
         </section>
 
     </main>
 
+<!--FOOTER: boutons "Mentions Légales" + "Contact"-->
     <footer class="footer">
         <div class="footer__mentions">
-            <p><a href="mentions.html" target="_blank">Mentions légales</a></p>
+            <p><a href="#" target="_blank">Mentions légales</a></p>
         </div>
         <div class="footer__contact">
             <p><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></p>

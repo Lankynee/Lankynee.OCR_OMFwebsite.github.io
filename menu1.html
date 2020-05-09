@@ -11,27 +11,29 @@
 </head>
 
 <body>
-
+<!--HEADER: En-tête avec logo de la marque-->
     <header class="header">
         <a href="index.html">
             <h1 class="header__logo">ohmyfood</h1>
         </a>
     </header>
 
-    <h2 class="menusheading">La note enchantée</h2>
+    <!--Nom du menu au dessus de la carte-->
+    <h2 class="menu-name">La note enchantée</h2>
 
-    <main class="mainmenu1">
-
-        <section class="mainmenu1__header">
-            <figure><img src="img/note.jpg" alt="note de musique" /></figure>
+    <main class="content-menu1">
+        <!--En-tête avec logo du menu-->
+        <section class="content-menu1__header">
+            <img src="img/note.png" alt="note de musique" />
             <h2>La note enchantée</h2>
         </section>
 
-        <section class="entree">
-            <h3 class="titleflex"><img class="ttl-leftdeco" src="img/heading1_deco_left.png" alt="">
-                <span class="menutitle">Prélude</span>
-                <img class="ttl-rightdeco"src="img/heading1_deco_right.png" alt="">
-            </h3>
+        <section class="category entree">
+            <div class="category__title">
+                <img src="img/heading1_deco_left.png" alt="">
+                <h3>Prélude</h3>
+                <img src="img/heading1_deco_right.png" alt="">
+            </div>
             <table>
                 <tr>
                     <td>Ravioles de foie gras accompagnés de leur crème à la truffe</td>
@@ -52,11 +54,12 @@
             </table>
         </section>
 
-        <section class="plat">
-            <h3><img src="img/heading1_deco_left.png" alt="">
-                <span class="menutitle">Point d'orgue</span>
+        <section class="category plat">
+            <div class="category__title">
+                <img src="img/heading1_deco_left.png" alt="">
+                <h3>Point d'orgue</h3>
                 <img src="img/heading1_deco_right.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</td>
@@ -73,33 +76,39 @@
             </table>
         </section>
 
-        <section class="dessert">
-            <h3><img src="img/heading1_deco_left.png" alt="">
-                <span class="menutitle">Mouvement final</span>
+        <section class="category dessert">
+            <div class="category__title">
+                <img src="img/heading1_deco_left.png" alt="">
+                <h3>Mouvement final</h3>
                 <img src="img/heading1_deco_right.png" alt="">
-            </h3>
+            </div>
             <table>
                 <tr>
                     <td>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</td>
+                    <td class="prix"></td>
                 </tr>
                 <tr>
                     <td>Baba au rhum revisité avec son coulis de citron</td>
+                    <td class="prix"></td>
                 </tr>
                 <tr>
                     <td>Tarte au citron meringuée destructurée</td>
+                    <td class="prix"></td>
                 </tr>
             </table>
         </section>
 
-        <div class="mainmenu1__footer">
-            <figure><img src="img/note_petit.jpg" alt="note de musique" /></figure>
+        <!--Footer de carte-->
+        <div class="content-menu1__footer">
+            <figure><img src="img/note_petit.png" alt="note de musique" /></figure>
             <p>La note enchantée</p>
         </div>
     </main>
 
+<!--FOOTER: boutons "Mentions Légales" + "Contact"-->
     <footer class="footer">
         <div class="footer__mentions">
-            <p><a href="mentions.html" target="_blank">Mentions légales</a></p>
+            <p><a href="#" target="_blank">Mentions légales</a></p>
         </div>
         <div class="footer__contact">
             <p><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></p>

@@ -1,0 +1,220 @@
+//Style pour le titre au dessus des cartes
+.menu-name {
+    text-align: center;
+    margin-top: 35px;
+}
+
+//Layout général: conteneur du menu
+.content-menu {
+    &1,&2,&3,&4 {
+        @include menu-box;
+        width: 75%;
+        min-width: 310px;
+        max-width: 900px;
+        margin: 20px auto 100px auto;
+        padding: 75px 0 100px 0;
+        &__header{
+            //Style pour logo de menu
+            img {
+                display: none;
+            }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7em;
+            @include media-breakpoint-up (s) {
+                img {
+                    display: block;
+                }
+                flex-direction: column;
+                align-items: center;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+//Layout grille de prix + titre des catégories
+.category {
+    //Titres+Décorations+Animations
+    &__title {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        padding: 20px;
+        img {
+            display: none;
+            @include media-breakpoint-up (m) {
+                display: block;
+                justify-content: center;
+                height: 100%;
+                width: 30%;
+                max-width: 250px;
+            }
+        }
+        h3 {
+            font-size: 1.5em;
+            text-align: center;
+            //Animation de soulignement de titre
+            display: inline;
+            position: relative;
+            &::after{
+                content: '';
+                background: #000;
+                display: block;
+                position: absolute;
+                width: 0; height: 3px;
+                right: 0;
+                transition: width 400ms ease;
+            }
+            &:hover::after{
+                width: 100%;
+                left: 0;
+                background: #000;
+            }
+        }
+    }
+
+    //Grille des prix
+    table {
+        margin: auto;
+    }
+    td {
+        padding: 10px;
+        margin: 0 5px 0 5px;
+    }
+    .prix {
+        text-align: right;
+        font-weight: bold;
+    }
+    //disposition de la grille des prix en vertical pour petits écrans
+    @media screen and (max-width: 576px) {
+        table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        td {
+            display: block;
+            text-align: center;
+            padding: 0;
+        }
+        .prix {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    @include media-breakpoint-up (m) {
+        table {
+            width: 600px
+        }
+    }
+    @include media-breakpoint-up (l) {
+        table {
+            width: 700px
+        }
+    }
+}
+
+
+//règles exclusives au Menu1
+.content-menu1 {
+    background-color: nth($bg-color,1);
+    color: #3d1319;
+    font-family: 'Segoe Print';
+    h2 {
+        font-family: nth($ttl-font,1);
+        font-weight: normal;
+    }
+    &__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: nth($ttl-font,1);
+        font-size: 2em;
+        font-weight: normal;
+        padding-top: 50px;
+    }
+}
+
+//règles exclusives au Menu2
+.content-menu2 {
+    background-color: nth($bg-color,2);
+    h2 {
+        font-family: nth($ttl-font,2);
+        font-weight: normal;
+        @include text-gradient2;
+    }
+    .entree {
+        color: #c67412;
+        h3 {
+            &::after{
+                background: #c67412;
+            }
+            &:hover::after{
+                background: #c67412;
+            }
+        }
+    }
+    .plat {
+        color: #a56799;
+        h3 {
+            &::after{
+                background: #a56799;
+            }
+            &:hover::after{
+                background: #a56799;
+            }
+        }
+    }
+    .dessert {
+        color: #6e4ccc;
+        h3 {
+            &::after{
+                background: #6e4ccc;
+            }
+            &:hover::after{
+                background: #6e4ccc;
+            }
+        }
+    }
+}
+
+//règles exclusives au Menu3
+.content-menu3 {
+    background-color: nth($bg-color,3);
+    font-family: 'Segoe Print';
+    h2 {
+        font-family: nth($ttl-font,3);
+        font-size: 2.2em;
+        font-weight: normal;
+        @include text-gradient3;
+        @include media-breakpoint-up (s) {
+            font-size: 3.5em;
+        }
+    }
+    h3 {
+        font-weight: normal;
+    }
+}
+
+//règles exclusives au Menu4
+.content-menu4 {
+    background-color: nth($bg-color,4);
+    font-family: 'Segoe Print';
+    h2 {
+        font-family: nth($ttl-font,4);
+        font-size: 2.2em;
+        font-weight: normal;
+        @include text-gradient4;
+        @include media-breakpoint-up (s) {
+            font-size: 3.5em;
+        }
+    }
+    h3 {
+        font-weight: normal;
+    }
+}

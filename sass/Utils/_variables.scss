@@ -1,13 +1,17 @@
+//Index numérotation des menus:
+//1 La Note Enchantée
+//2 Le Chic à La Française
+//3 Le Délice des Papilles
+//4 La Palette Du Goût
+
 $color-primary: #579c87;
 $color-secondary: #fdcb46;
-$bg-color: #fcdfdb #fff5fe #f9f9f9 #fdfffd;
+$bg-color: #fcdfdb #fff5fe #edefef #fdfffd;
+//Polices des titres de menu:
 $ttl-font: 'Devonshire' 'CroissantOne' 'DancingScript' 'KaushanScript';
-$fontsize: (
-    s:1em,
-    m:1.5em,
-    l:3em,
-    xl:10em);
+
 $breakpoints: (
+    xs:370px,
     s:576px,
     m:800px,
     l:992px,

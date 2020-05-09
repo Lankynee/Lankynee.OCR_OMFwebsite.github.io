@@ -11,57 +11,59 @@
 </head>
 
 <body>
-
+<!--HEADER: En-tête avec logo de la marque-->
     <header class="header">
         <a href="index.html">
             <h1 class="header__logo">ohmyfood</h1>
         </a>
     </header>
 
+<!--LA CARTE: contient tous les menus proposés sur le site-->
     <main class="carte">
         <div class="carte__bloc">
-            <article class="menu1">
-                <a href="menu1.html">
-                    <div class="menu1__img"><img src="img/note_petit.jpg" alt="note de musique"></div>
-                    <h3 class="menu1__heading">La note enchantée</h3>
+            <section class="menu1">
+                <a class="menu1__link" href="menu1.html">
+                    <div class="menu1__img"><img src="img/note_petit.png" alt="note de musique"></div>
+                    <h2 class="menu1__heading">La note enchantée</h2>
                     <p class="menu1__body">MENU</p>
                 </a>
-            </article>
+            </section>
         </div>
         <div class="carte__bloc">
-            <article class="menu2">
-                <a href="menu2.html">
-                    <h3 class="menu2__heading">Le chic à la française</h3>
+            <section class="menu2">
+                <a class="menu2__link" href="menu2.html">
+                    <h2 class="menu2__heading">Le chic à la française</h2>
                     <p class="menu2__body">Menu</p>
                 </a>
-            </article>
+            </section>
         </div>
         <div class="carte__bloc">
-            <article class="menu3">
-                <a href="menu3.html">
-                    <h3 class="menu3__heading">Le délice des papilles</h3>
+            <section class="menu3">
+                <a class="menu3__link" href="menu3.html">
+                    <h2 class="menu3__heading">Le délice des papilles</h2>
                     <p class="menu3__body">Menu</p>
                 </a>
-            </article>
+            </section>
         </div>
         <div class="carte__bloc">
-            <article class="menu4">
-                <a href="menu4.html">
-                    <h3 class="menu4__heading">La palette du goût</h3>
+            <section class="menu4">
+                <a class="menu4__link" href="menu4.html">
+                    <h2 class="menu4__heading">La palette du goût</h2>
                     <p class="menu4__body">Menu</p>
                 </a>
-            </article>
+            </section>
         </div>
     </main>
 
-    <section class="prochnmt">
-        <p class="prochnmt__heading">Prochainement <span>.</span><span>.</span><span>.</span></p>
-    </section>
+<!--Section "Prochainement"-->
+    <div class="proch">
+        <p class="proch__heading">Prochainement <span>.</span><span>.</span><span>.</span></p>
+    </div>
 
-
+<!--FOOTER: boutons "Mentions Légales" + "Contact"-->
     <footer class="footer">
         <div class="footer__mentions">
-            <p><a href="mentions.html" target="_blank">Mentions légales</a></p>
+            <p><a href="#" target="_blank">Mentions légales</a></p>
         </div>
         <div class="footer__contact">
             <p><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></p>

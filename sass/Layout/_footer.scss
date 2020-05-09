@@ -5,13 +5,14 @@
     justify-content: space-between;
     padding: 15px;
     width: 100%;
+    margin: auto;
     box-sizing: border-box;
     background-color: $color-primary;
     a {
         display: block;
         color: $color-secondary;
         font-family: 'Arial';
-        font-size: 1.2em;
+        font-size: 1em;
         @include media-breakpoint-up (s) {
             font-size: 1.4em;
         }
